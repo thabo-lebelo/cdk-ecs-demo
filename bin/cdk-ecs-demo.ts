@@ -5,6 +5,7 @@ import { FargateDemoStack } from '../lib/fargate'
 
 const app = new cdk.App();
 
+//Replace with your details
 new FargateDemoStack(app, "FargateDemoStack", {
     env: { account: "<account-id>", region: "<region>"}
 });
