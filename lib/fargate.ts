@@ -26,6 +26,7 @@ export class FargateDemoStack extends cdk.Stack {
         });
 
         // get our image
+        // Replace with your repo ARN
         const repo = ecr.Repository.fromRepositoryArn(this, "thabolebeloRepo",
             "arn:aws:ecr:<region>:<account-number>:repository/<repo-name>"
         );
